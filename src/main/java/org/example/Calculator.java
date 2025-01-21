@@ -20,4 +20,24 @@ public class Calculator {
         }
         return a / b;
     }
+
+    public double wurzel(double a) throws NegativeNumberException {
+        if (a < 0) {
+            throw new NegativeNumberException();
+        }
+        return Math.sqrt(a);
+    }
+
+    public double powerOfTwo(double a) {
+        return Math.pow(a, 2);
+    }
+
+    public double sinus(double radians) {
+        return Math.sin(radians);
+    }
+
+    public double cosinus(double radians) {
+        return Math.cos(radians);
+    }
+
 }
