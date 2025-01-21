@@ -1,3 +1,5 @@
+[![Java CI](https://github.com/enealulaj/SEW_TestingWithGit/actions/workflows/ci.yml/badge.svg)](https://github.com/enealulaj/SEW_TestingWithGit/actions/workflows/ci.yml)
+
 # Calculator Project Documentation
 
 ## Overview
