@@ -103,4 +103,18 @@ class CalculatorTest {
         // Test for cosine of 3π/2 radians
         assertEquals(0.0, calculator.cosinus(3 * Math.PI / 2), 0.0001);
     }
+
+    @Test
+    void toBinary() {
+        // Test für positive Zahlen
+        assertEquals("1010", calculator.toBinary(10));
+        assertEquals("1111", calculator.toBinary(15));
+
+        // Test für Null
+        assertEquals("0", calculator.toBinary(0));
+
+        // Test für Ausnahme bei negativen Zahlen
+        assertThrows(IllegalArgumentException.class, () -> calculator.toBinary(-5));
+    }
+
 }

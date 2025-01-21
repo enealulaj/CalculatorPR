@@ -39,5 +39,10 @@ public class Calculator {
     public double cosinus(double radians) {
         return Math.cos(radians);
     }
-
+    public String toBinary(int number) {
+        if (number < 0) {
+            throw new IllegalArgumentException("Nur natürliche Zahlen erlaubt.");
+        }
+        return Integer.toBinaryString(number);
+    }
 }
